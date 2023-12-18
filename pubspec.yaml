@@ -38,7 +38,6 @@ dependencies:
   circular_bottom_navigation: ^2.3.0
   google_fonts: ^6.1.0
   flutter_svg_provider: ^1.0.7
-  text_to_speech: ^0.2.3
 
 dev_dependencies:
   flutter_test:

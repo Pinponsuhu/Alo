@@ -15,6 +15,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
       backgroundColor: Colors.white,
       automaticallyImplyLeading: false,
@@ -44,7 +45,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
               ),
               Text(
                 "Enter your email address and we'll send you a link to reset your password", 
-                style: mediumTextGrey(16),
+                style: mediumTextGrey(fontSize: 18),
                 ), 
                 SizedBox(
                 height: 18,
@@ -73,7 +74,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   onPressed: ()=> Navigator.pushNamed(context, MailSentScreen.id), 
                   child: Text(
                     "Send Link", 
-                    style: mediumText(fontSize: 16, fontWeight: FontWeight.w900),
+                    style: mediumText(fontSize: 16, fontWeight: FontWeight.w600),
                     ), 
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.amber), 

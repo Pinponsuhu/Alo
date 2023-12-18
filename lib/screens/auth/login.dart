@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:itan/constants.dart';
 import 'package:itan/screens/auth/forgot_password.dart';
 import 'package:itan/screens/auth/register.dart';
+import 'package:itan/screens/home.dart';
 
 class LoginScreen extends StatefulWidget {
   static String id = '/login';
@@ -19,7 +20,9 @@ class _LoginScreenState extends State<LoginScreen> {
   final GlobalKey _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
+    
     return Scaffold(
+      resizeToAvoidBottomInset: false,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.white,
@@ -51,7 +54,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ), 
                   TextButton(onPressed: ()=> Navigator.pushNamed(context, RegisterScreen.id), child: Text(
                     "Register", 
-                    style: mediumTextGrey(18),
+                    style: mediumTextGrey(fontSize: 18),
                     ))
                 ],
               ), 
@@ -102,7 +105,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     onPressed:()=> Navigator.pushNamed(context, ForgotPasswordScreen.id), 
                   child: Text(
                     "Reset", 
-                    style: mediumTextGrey(20),
+                    style: mediumTextGrey(fontSize: 18),
                     ))
                 ],
               ), 
@@ -112,10 +115,10 @@ class _LoginScreenState extends State<LoginScreen> {
               SizedBox(
                 width: double.infinity, 
                 child: TextButton(
-                  onPressed: null, 
+                  onPressed: ()=> Navigator.pushNamed(context, HomeScreen.id), 
                   child: Text(
                     "Login", 
-                    style: mediumText(fontSize: 18, fontWeight: FontWeight.w900),
+                    style: mediumText(fontSize: 18, fontWeight: FontWeight.w600),
                     ), 
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.amber), 

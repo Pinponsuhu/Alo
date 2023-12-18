@@ -38,7 +38,7 @@ class MailSentScreen extends StatelessWidget {
             Text(
                 "We just sent an email to your inbox with a link to reset your password.", 
                 textAlign: TextAlign.center,
-                style: mediumTextGrey(16),
+                style: mediumTextGrey(fontSize: 18),
                 ),
             SizedBox(
               height: 24,
@@ -49,7 +49,7 @@ class MailSentScreen extends StatelessWidget {
                 onPressed: ()=> Navigator.pushNamedAndRemoveUntil(context, LoginScreen.id, (route) => false),
                 child: Text(
                   "Login",
-                  style: mediumText(fontSize: 18, fontWeight: FontWeight.w900),
+                  style: mediumText(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.amber),

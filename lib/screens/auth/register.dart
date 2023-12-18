@@ -45,7 +45,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Navigator.pushNamed(context, LoginScreen.id),
                     child: Text(
                       "Login",
-                      style: mediumTextGrey(18),
+                      style: mediumTextGrey(fontSize: 18),
                     ))
               ],
             ),
@@ -114,7 +114,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 onPressed: null,
                 child: Text(
                   "Register",
-                  style: mediumText(fontSize: 18,  fontWeight: FontWeight.w900),
+                  style: mediumText(fontSize: 18,  fontWeight: FontWeight.w600),
                 ),
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.amber),
