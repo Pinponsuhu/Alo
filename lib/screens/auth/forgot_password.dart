@@ -73,7 +73,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
                   onPressed: ()=> Navigator.pushNamed(context, MailSentScreen.id), 
                   child: Text(
                     "Send Link", 
-                    style: mediumText(16),
+                    style: mediumText(fontSize: 16, fontWeight: FontWeight.w900),
                     ), 
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.amber), 

@@ -49,7 +49,7 @@ class MailSentScreen extends StatelessWidget {
                 onPressed: ()=> Navigator.pushNamedAndRemoveUntil(context, LoginScreen.id, (route) => false),
                 child: Text(
                   "Login",
-                  style: mediumText(18),
+                  style: mediumText(fontSize: 18, fontWeight: FontWeight.w900),
                 ),
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.amber),

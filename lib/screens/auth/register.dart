@@ -23,7 +23,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
       ),
       body: Container(
         color: Colors.white,
-        padding: EdgeInsets.all(18),
+        padding: EdgeInsets.all(20),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -31,25 +31,26 @@ class _RegisterScreenState extends State<RegisterScreen> {
               "Create\nNew Account",
               style: GoogleFonts.lora(
                 fontWeight: FontWeight.w500,
-                fontSize: 34,
+                fontSize: 30,
+                height: 1.3,
                 decoration: TextDecoration.none,
                 color: Colors.black,
               ),
             ),
             Row(
               children: [
-                Text("Already have an account?", style: mediumText(20)),
+                Text("Already have an account?/", style: mediumText(fontSize: 18)),
                 TextButton(
                     onPressed: () =>
                         Navigator.pushNamed(context, LoginScreen.id),
                     child: Text(
                       "Login",
-                      style: mediumTextGrey(20),
+                      style: mediumTextGrey(18),
                     ))
               ],
             ),
             SizedBox(
-              height: 34,
+              height: 38,
             ),
             TextFormField(
               controller: _emailAddress,
@@ -105,9 +106,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
             ),
             SizedBox(
-              height: 14,
-            ),
-            SizedBox(
               height: 24,
             ),
             SizedBox(
@@ -116,7 +114,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 onPressed: null,
                 child: Text(
                   "Register",
-                  style: mediumText(18),
+                  style: mediumText(fontSize: 18,  fontWeight: FontWeight.w900),
                 ),
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.amber),

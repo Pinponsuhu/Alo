@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-TextStyle mediumText(double fontSize) {
+TextStyle mediumText({required double fontSize, FontWeight fontWeight = FontWeight.normal}) {
   return GoogleFonts.lora(
       fontSize: fontSize,
       fontWeight: FontWeight.normal,

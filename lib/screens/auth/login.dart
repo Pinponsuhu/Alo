@@ -26,7 +26,7 @@ class _LoginScreenState extends State<LoginScreen> {
       ),
       body: Container(
       color: Colors.white,
-      padding: EdgeInsets.all(18),
+      padding: EdgeInsets.all(20),
       child: Form(
         key: _formKey,
         child: 
@@ -37,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
               "Hey👋🏾,\nWelcome Back", 
               style: GoogleFonts.lora(
                 fontWeight: FontWeight.w500, 
-                fontSize: 34,
+                fontSize: 30,
                 decoration: TextDecoration.none, 
                 color: Colors.black,
               ),
@@ -46,12 +46,12 @@ class _LoginScreenState extends State<LoginScreen> {
               Row(
                 children: [
                   Text(
-                    "Don't have an account?", 
-                    style: mediumText(20)
+                    "Don't have an account?/", 
+                    style: mediumText(fontSize: 18.0)
                     ), 
                   TextButton(onPressed: ()=> Navigator.pushNamed(context, RegisterScreen.id), child: Text(
                     "Register", 
-                    style: mediumTextGrey(20),
+                    style: mediumTextGrey(18),
                     ))
                 ],
               ), 
@@ -96,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 children: [
                   Text(
                     "Forgot Password?/", 
-                    style: mediumText(20)
+                    style: mediumText(fontSize: 18.0)
                     ), 
                   TextButton(
                     onPressed:()=> Navigator.pushNamed(context, ForgotPasswordScreen.id), 
@@ -115,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   onPressed: null, 
                   child: Text(
                     "Login", 
-                    style: mediumText(18),
+                    style: mediumText(fontSize: 18, fontWeight: FontWeight.w900),
                     ), 
                     style: ButtonStyle(
                       backgroundColor: MaterialStateProperty.all(Colors.amber), 
